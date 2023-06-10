@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="author" content="Pak Sheikh">
+
+	<title>Terraform | AWS</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+<div id="myLogo" style="background: url(images/orsted.png);
+                        position: absolute;
+                        background-size: 50%;
+                        background-repeat: no-repeat;
+                        background-position: 1% 98%;
+                        bottom: 20px;
+                        left: 25px;
+                        width: 190px;
+                        height: 150px;"></div>
+		<div class="slides">
+
+                
+                	<section data-background-image="https://i.gifer.com/2RNb.gif">
+                		<p>&nbsp;
+                		
+
+
+	
+ 
+					<div id="typed-strings">
+
+
+					<h1>[  Reveal.JS  ]</h1>
+					<h1>Terraform | AWS</h1>
+					<h1>Create EC2 instance</h1>
+					<p>
+						
+						<small>Created by <a href="http://www.orsted.dk">Sheikh Mohd Rozaimi</a>  <a href="https://twitter.com/sheikhmohdrozaimi"></a></small>
+					</p>
+					</div>
+					<span id="typed"></span>
+
+					<div id="myLogo" style="background: url(images/t.png);
+                        position: absolute;
+                        background-size: 60%;
+                        background-repeat: no-repeat;
+                        background-position: 55% 100%;
+                        bottom: 80px;
+                        left: 340px;
+                        width: 280px;
+                        height: 280px;"></div>
+		<div class="slides">
+
+				</section>
+
+
+			<section>
+				<img src="https://media.giphy.com/media/pOAJFhAcqFXgzbQm25/giphy.gif" alt="Smiley face" height="500" width="700">
+
+
+				<h2></h2>
+				
+                                <p> <span style="display: inline-block; color:white;" class="fragment fade-right">Are you </span> <span class="fragment highlight-red">ready?...</span> <span class="fragment highlight-blue">let's</span> <span class="fragment highlight-green">start</span> <span style="display: inline-block; color:lime;" class="fragment fade-left">Terraform | AWS</span></p>
+
+			</section> 
+            <section>
+			<section data-markdown>
+				<textarea data-template>
+					### [welcome!](https://youtu.be/i8dxsC6qaF8)
+					Please be aware that this page is exclusively meant for testing purposes. It showcases the successful deployment of the reveal.js application on an Amazon Web Services (AWS) EC2 instance, created using Terraform. `Cont...`
+					 
+				</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					By utilizing Terraform, an infrastructure-as-code tool, I have successfully provisioned the necessary resources and configurations to run reveal.js on AWS EC2. This demonstration serves as an example of how Terraform can simplify the process of creating EC2 instances and deploying applications 
+				</textarea>
+			</section>
+</section>
+			<section data-markdown>
+				<textarea data-template>
+					### [what is reveal.js?](https://youtu.be/i8dxsC6qaF8)
+					Reveal.js is an open-source web-based framework for creating and delivering presentations. It is built using HTML, CSS, and JavaScript and offers a wide range of features and capabilities for designing interactive and visually appealing presentations. `Cont...`
+				</textarea>
+			</section>
+
+			<section>
+				<section data-markdown>
+					<textarea data-template>
+						
+						With reveal.js, you can create slideshows that incorporate various multimedia elements, such as images, videos, and code snippets. It provides flexible layout options, customizable themes, and a robust set of animation and transition effects to enhance the visual appeal of your presentations
+                                           
+					</textarea>
+				</section>
+</section>
+<section>
+				<section data-markdown>
+					<textarea data-template>
+						### [preparation to create ec2](https://youtu.be/i8dxsC6qaF8) 
+						
+						* You need to install on your Operating System: 
+							* Install VS Code
+							* Install AWS CLI 2
+							* Install Terraform 
+						* Create IAM user in AWS, Access Key and Secret Access Key
+						* Configure IAM User - aws configure
+						* Create new directory for Terraform code
+
+						</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+							### [provider](https://youtu.be/i8dxsC6qaF8)
+
+							Configured aws provider with proper credentials
+	
+							```bash
+							provider "aws" {
+							  region    = "ap-southeast-1"
+							  profile   = "sheikh"
+							}   
+							``` 
+							</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+							### [resource](https://youtu.be/i8dxsC6qaF8)
+
+							Create default vpc if one does not exit
+	
+							```bash
+							resource "aws_default_vpc" "default_vpc" {
+							  tags    = {
+							     Name = Default VPC
+							  }
+							}   
+							```
+					</textarea>
+				</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+						### [To be continue...](https://youtu.be/i8dxsC6qaF8) 
+						
+						* Just for test / demo
+							* Creating an EC2 instance and deploying an application using Reveal.js with Terraform 
+							* ......
+							* ......
+
+						</textarea>
+				</section>
+
+
+
+
+
+
+			</section>
+
+
+                          
+                 <section style="text-align: left;">
+
+                 	<section data-markdown>
+
+<textarea data-template>
+					<h1>THE END</h1>
+					<p>
+						- <a href="http://www.google.com">Sample</a> <br>
+						- <a href="http://www.google.com">Source code &amp; documentation</a>
+					</p>
+				
+				</textarea>
+	
+				</section>
+
+
+
+			
+							
+			<section data-background="https://i.gifer.com/VnD.gifi" style="text-align: center;">
+		        <h1 style="color:DeepSkyBlue;">Thank you!</h1>
+                        <p>&nbsp;			
+			<h1 style="color:DeepSkyBlue;"></h1>
+				
+		
+
+					
+
+
+
+               
+
+    
+
+
+
+
+
+
+		</div>
+	</div>
+
+	<!-- Script loading library, needed to load plugins -->
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			// Display the page number of the current slide
+			slideNumber: true,
+			showSlideNumber: 'speaker',
+
+			// Push each slide change to the browser history
+			history: true,
+
+			// Transition style
+			transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+			dependencies: [
+{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					// using async=true didn't work well so used false
+					{ src: 'plugin/typed/typed.js', async: false , callback: function() { callTypedJs(); }}
+			]
+		});
+	</script>
+</body>
+
+</html>
